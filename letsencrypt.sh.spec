@@ -14,12 +14,11 @@ Requires:	openssl
 letsencrypt/acme client implemented as a shell-script
 
 %prep
-%setup -n master
+%setup -n letsencrypt.sh-master
 
 
 %build
 rm -rf %{buildroot}
-#mkdir -p %{buildroot}/usr/share/doc/%{name}-%{version}
 
 %install
 install -D -m 0555 letsencrypt.sh %{buildroot}/%{_sbindir}/letsencrypt.sh
