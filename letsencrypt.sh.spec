@@ -22,9 +22,9 @@ rm -rf %{buildroot}
 
 %install
 install -D -m 0555 letsencrypt.sh %{buildroot}/%{_sbindir}/letsencrypt.sh
-install -D -m 0644 config.sh.example %{buildroot}/%{_sysconfdir}/%{name}/config.sh
-install -D -m 0644 domains.txt.example %{buildroot}/%{_sysconfdir}/%{name}/domains.txt
-install -D -m 0644 hook.sh.example %{buildroot}/%{_sysconfdir}/%{name}/hook.sh.example
+install -D -m 0644 docs/examples/config %{buildroot}/%{_sysconfdir}/%{name}/config.sh
+install -D -m 0644 docs/examples/domains.txt %{buildroot}/%{_sysconfdir}/%{name}/domains.txt
+install -D -m 0644 docs/examples/hook.sh %{buildroot}/%{_sysconfdir}/%{name}/hook.sh.example
 
 
 %files
