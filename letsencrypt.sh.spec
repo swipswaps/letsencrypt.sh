@@ -1,6 +1,6 @@
 Name:		letsencrypt.sh
-Version:	0.0.1
-Release:	1%{?dist}
+Version: 1.0.0
+Release: 1%{?dist}
 Summary:	letsencrypt/acme client implemented as a shell-script
 
 License:	MIT	
@@ -38,6 +38,9 @@ install -D -m 0644 docs/examples/hook.sh %{buildroot}/%{_sysconfdir}/%{name}/hoo
 
 
 %changelog
+* Mon Jun 06 2016 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.0-1
+- Updated to latest upstream release [NethServer - #3399]
+
 * Tue Feb 16 2016 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 0.0.1-1
 - First build for CentOS
 
