@@ -5,4 +5,4 @@ config
 hook.sh
 certs/*
 archive/*
-.acme-challenges/*
+accounts/*

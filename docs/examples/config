@@ -10,11 +10,16 @@
 # Default values of this config are in comments        #
 ########################################################
 
+# Resolve names to addresses of IP version only. (curl)
+# supported values: 4, 6
+# default: <unset>
+#IP_VERSION=
+
 # Path to certificate authority (default: https://acme-v01.api.letsencrypt.org/directory)
 #CA="https://acme-v01.api.letsencrypt.org/directory"
 
-# Path to license agreement (default: https://letsencrypt.org/documents/LE-SA-v1.0.1-July-27-2015.pdf)
-#LICENSE="https://letsencrypt.org/documents/LE-SA-v1.0.1-July-27-2015.pdf"
+# Path to license agreement (default: https://letsencrypt.org/documents/LE-SA-v1.1.1-August-1-2016.pdf)
+#LICENSE="https://letsencrypt.org/documents/LE-SA-v1.1.1-August-1-2016.pdf"
 
 # Which challenge should be used? Currently http-01 and dns-01 are supported
 #CHALLENGETYPE="http-01"
@@ -34,14 +39,11 @@
 # Output directory for generated certificates
 #CERTDIR="${BASEDIR}/certs"
 
-# Output directory for challenge-tokens to be served by webserver or deployed in HOOK (default: $BASEDIR/.acme-challenges)
-#WELLKNOWN="${BASEDIR}/.acme-challenges"
+# Directory for account keys and registration information
+#ACCOUNTDIR="${BASEDIR}/accounts"
 
-# Location of private account key (default: $BASEDIR/private_key.pem)
-#ACCOUNT_KEY="${BASEDIR}/private_key.pem"
-
-# Location of private account registration information (default: $BASEDIR/private_key.json)
-#ACCOUNT_KEY_JSON="${BASEDIR}/private_key.json"
+# Output directory for challenge-tokens to be served by webserver or deployed in HOOK (default: /var/www/letsencrypt)
+#WELLKNOWN="/var/www/letsencrypt"
 
 # Default keysize for private keys (default: 4096)
 #KEYSIZE="4096"
