@@ -1,5 +1,5 @@
 Name:		letsencrypt.sh
-Version: 1.0.1
+Version: 1.0.2
 Release: 1%{?dist}
 Summary:	letsencrypt/acme client implemented as a shell-script
 
@@ -38,6 +38,9 @@ install -D -m 0644 docs/examples/hook.sh %{buildroot}/%{_sysconfdir}/%{name}/hoo
 
 
 %changelog
+* Mon Sep 05 2016 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.2-1
+- Mark config file as noreplace
+
 * Fri Sep 02 2016 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.1-1
 - Let's Encrypt: certificates not renewed - Bug #3420
 
