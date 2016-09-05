@@ -29,7 +29,7 @@ install -D -m 0644 docs/examples/hook.sh %{buildroot}/%{_sysconfdir}/%{name}/hoo
 
 %files
 %dir %{_sysconfdir}/%{name}
-%config %{_sysconfdir}/%{name}/config.sh
+%config(noreplace) %{_sysconfdir}/%{name}/config.sh
 %config %{_sysconfdir}/%{name}/domains.txt
 %ghost %{_sysconfdir}/%{name}/hook.sh.example
 %doc README.md LICENSE
